@@ -1,0 +1,88 @@
+{
+	"code": "200",
+	"data": {
+		"loginUser": {
+			"clientIdentity": "3c1013bd-922a-4b0f-956f-88b3f35e759b",
+			"platform": "APP",
+			"userId": "1772529265904197633",
+			"tenantId": null,
+			"username": "系统培训师",
+			"realName": "系统培训师",
+			"phoneNo": "17366953616",
+			"email": "shanqiyu@360humi.com",
+			"userType": "COMPANY_MANAGER",
+			"accountNonExpired": true,
+			"accountNonLocked": true,
+			"credentialsNonExpired": true,
+			"enabled": true,
+			"tokenId": "aedcf3d3-893f-4a29-89e8-37cfcef4d3af",
+			"company": {
+				"id": "1",
+				"name": "宗申零部件",
+				"companyType": 4,
+				"cardNo": null,
+				"licenseImg": null,
+				"licenseType": null,
+				"industryCode": "I",
+				"industryName": null,
+				"registerArea": "500000,500107",
+				"registerAreaName": null,
+				"registerAddress": null,
+				"website": null,
+				"introduce": null,
+				"liaisonId": null,
+				"liaison": null,
+				"liaisonPhone": null,
+				"liaisonEmail": null,
+				"legalPerson": null,
+				"legalCradType": null,
+				"legalCardNo": null,
+				"legalCardImg": null,
+				"authStatus": 1,
+				"examineStatus": 1,
+				"identifyPrefix": null
+			},
+			"resources": null,
+			"authorities": [
+				{
+					"roleCode": "JS001",
+					"uncontrolled": false
+				},
+				{
+					"roleCode": "JS6",
+					"uncontrolled": false
+				}
+			],
+			"orgInfo": {
+				"id": "1305688720384745472",
+				"companyId": "1",
+				"name": "宗申零部件",
+				"code": "ZZ00",
+				"orgParentId": "0",
+				"type": 1,
+				"status": 1,
+				"orgRelationship": "宗申零部件",
+				"sort": 1,
+				"attributionZone": "Admin",
+				"contactPerson": "xxx",
+				"contactNumber": null,
+				"contactAddress": null,
+				"contactEmail": null,
+				"remark": null,
+				"platformType": null
+			},
+			"enterpriseId": null
+		},
+		"loginToken": {
+			"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NjAwNzc4MDIsInVzZXJfbmFtZSI6Iuezu-e7n-WfueiureW4iCIsImF1dGhvcml0aWVzIjpbIlJPTEVfSlM2IiwiUk9MRV9KUzAwMSJdLCJqdGkiOiJhZWRjZjNkMy04OTNmLTRhMjktODllOC0zN2NmY2VmNGQzYWYiLCJjbGllbnRfaWQiOiJodW1pLW1lc3YxLXVzZXItY2VudGVyIiwic2NvcGUiOlsiYWxsIl19.Ew2dUYzS_rDs3N4Sw7JK4QBNlvfBzdWFPvivA4Q2TgQ",
+			"token_type": "bearer",
+			"refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiLns7vnu5_ln7norq3luIgiLCJzY29wZSI6WyJhbGwiXSwiYXRpIjoiYWVkY2YzZDMtODkzZi00YTI5LTg5ZTgtMzdjZmNlZjRkM2FmIiwiZXhwIjoxNzU1MjM5NDAyLCJhdXRob3JpdGllcyI6WyJST0xFX0pTNiIsIlJPTEVfSlMwMDEiXSwianRpIjoiMGNlYjMwNTgtOGQ1ZC00ZDQxLThlN2UtZjljNmNmZTcyMTFiIiwiY2xpZW50X2lkIjoiaHVtaS1tZXN2MS11c2VyLWNlbnRlciJ9.m9XXXLyVb5sXBadx6knvM24SuM9KmIU8Bnb7EoZc_Ew",
+			"expires_in": 6047999,
+			"scope": "all",
+			"jti": "aedcf3d3-893f-4a29-89e8-37cfcef4d3af",
+			"grant_type": "password"
+		}
+	},
+	"message": "处理成功",
+	"success": true
+}
