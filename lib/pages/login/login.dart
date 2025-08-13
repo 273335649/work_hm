@@ -468,8 +468,7 @@ class _LoginBtnState extends State<LoginBtn> {
         } else {
           print(res['message']);
           EasyLoading.showError("登录失败:${res["message"]}");
-        }
-        ;
+        };
       }
 
       // if (Constant.isDev) {
@@ -479,7 +478,11 @@ class _LoginBtnState extends State<LoginBtn> {
         // https://privatization-gateway-hf-dev.local.360humi.com/user-center/authentication/form
         final loginFetch2 = Request.post(
           "/dev/user-center/authentication/form",
-          data: result,
+          // data: result,
+          data: data,
+          headers:{
+            'noConfer': 'true',
+          }
         );
         loginFetch2.then((res) async => {
           loginThen(res)

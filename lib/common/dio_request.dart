@@ -86,6 +86,7 @@ class Request {
     bool isChildToken = false,
     bool isZDToken = false,
     onBadResponse,
+    headers,
   }) async {
     await LoginPrefs.init();
     // await Request.init();
@@ -125,6 +126,7 @@ class Request {
             "Authorization": accessToken,
             "Client-Identity": clientId,
             'Cookie': 'identitytoken=${accessToken}',
+            ...headers??{},
           },
         ),
       );
@@ -177,7 +179,7 @@ class Request {
       var dataCode = dataObjec['code'] ?? "";
       if (errorCode?.statusCode == 401) {
         List logintCode = ["400", "40105", "40104", "40100", "40111", "40114"];
-        print('错误401 接口：${e.requestOptions.path} 状态：${logintCode.contains(dataCode)} 数据代码：$dataCode');
+        print('错误401 接口：${e.requestOptions.uri.toString()} 状态：${logintCode.contains(dataCode)} 数据代码：$dataCode headers: ${e.requestOptions.headers ?? 'null'} noConfer: ${e.requestOptions.headers?['noConfer'] ?? 'null'} 参数: ${e.requestOptions.data ?? 'null'}');
         // SpUtil.remove(Constant.accessToken);
         // SpUtil.remove(Constant.userBasicInfo);
         if (dataCode.isNotEmpty && logintCode.contains(dataCode)) {
@@ -298,7 +300,7 @@ class Request {
     String path, {
     Map<String, dynamic>? params,
     data,
-    options,
+    headers,
     bool? isShow,
     bool? isChildToken,
     bool? isZDToken,
@@ -315,6 +317,7 @@ class Request {
       isZDToken: isZDToken ?? false,
       baseUrl: baseUrl,
       onBadResponse: onBadResponse,
+      headers: headers?? {},
     );
   }
 

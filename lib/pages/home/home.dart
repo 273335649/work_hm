@@ -66,12 +66,12 @@ class _HomeState extends State<Home> {
       setState(() {});
     }
   }
-
   @override
   Widget build(BuildContext context) {
     TextEditingController username = TextEditingController();
     final userinfo = jsonDecode(LoginPrefs.getUserInfo() ?? '');
     final userModel = Provider.of<UserModel>(context);
+  print('userModel${userModel.info}');
     return Stack(
         children: [
           Container(width: 1.sw, height: 1.sh, color: const Color(0xff001030)),
@@ -101,7 +101,7 @@ class _HomeState extends State<Home> {
                 // TimeWidget(), // TODO 每秒更新时间
                 RealTimeClock(),
                 Text(
-                  ' |   登录人：${userinfo['username']}   |   产线：${userinfo['lineOrgPath']??'-'}   ${userinfo['lineName']??'-'}   工位：${userModel.info['positionId']?['name']??'-'}',
+                  ' |   登录人：${userinfo['username']}   |   产线：${userinfo['lineName']??'-'}   工位：${userModel.info['stationId']?['name']??'-'}',
                   style: TextStyle(color: Color(0xFF3A6FCE), fontSize: 14.sp),
                 ),
                 Spacer(),
